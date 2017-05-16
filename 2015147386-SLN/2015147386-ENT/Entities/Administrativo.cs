@@ -8,6 +8,7 @@ namespace _2015147386_ENT.Entities
 {
     class Administrativo : Empleado
     {
-
+        public int AdministrativoId { get; set; }
+        public string Classificaion { get; set; }
     }
 }

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2015147386_ENT.Entities
+namespace _2015147386_ENT.IRepositories
 {
-    class Empleado
+    interface IVentaRepository
     {
-        public int EmpleadoId { get; set; }
     }
 }
