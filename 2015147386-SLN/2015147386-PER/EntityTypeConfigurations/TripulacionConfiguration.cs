@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _2015147386_PER.EntityTypeConfigurations
 {
-    class TripulacionConfiguration
+    public class TripulacionConfiguration : EntityTypeConfiguration<TipoTripulacionConfiguration>
     {
+        public TripulacionConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("Tripulaciones");
+            HasKey(a => a.TripulacionId);
+
+
+            //Relation Configurations
+        }
     }
 }

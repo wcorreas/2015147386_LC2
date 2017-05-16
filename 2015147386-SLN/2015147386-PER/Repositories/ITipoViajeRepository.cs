@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2015147386_ENT.IRepositories
+namespace _2015147386_PER.Repositories
 {
-    public interface IBusRepository : IRepository<Bus>
+    class ITipoViajeRepository
     {
     }
 }

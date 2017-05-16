@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _2015147386_PER.EntityTypeConfigurations
 {
-    class VentasConfiguration
+    public class VentaConfiguration : EntityTypeConfiguration<VentaConfiguration>
     {
+        public VentaConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("Ventas");
+            HasKey(a => a.VentaId);
+
+
+            //Relation Configurations
+        }
     }
 }

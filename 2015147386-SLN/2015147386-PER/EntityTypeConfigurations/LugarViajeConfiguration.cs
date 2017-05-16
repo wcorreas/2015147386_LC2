@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace _2015147386_PER.EntityTypeConfigurations
 {
-    class LugarViajeConfiguration
+    public class LugarViajeConfiguration : EntityTypeConfiguration<LugarViajeConfiguration>
     {
+        public LugarViajeConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("LugarViajes");
+            HasKey(a => a.LugarViajeId);
+
+
+            //Relation Configurations
+        }
+
     }
 }

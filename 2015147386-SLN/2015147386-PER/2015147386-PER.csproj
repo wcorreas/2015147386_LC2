@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="2015147386Context.cs" />
     <Compile Include="EntityTypeConfigurations\AdministrativoConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\BusConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\ClienteConfiguration.cs" />
@@ -56,7 +56,25 @@
     <Compile Include="EntityTypeConfigurations\TransporteConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\TripulacionConfiguration.cs" />
     <Compile Include="EntityTypeConfigurations\VentasConfiguration.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\_ACT.cs" />
+    <Compile Include="Migrations\_InitialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IAdministrativoRepository.cs" />
+    <Compile Include="Repositories\IBusRepository.cs" />
+    <Compile Include="Repositories\IClienteRepository.cs" />
+    <Compile Include="Repositories\IEcomiendaRepository.cs" />
+    <Compile Include="Repositories\IEmpleadoRepository.cs" />
+    <Compile Include="Repositories\ILugarViajeRepository.cs" />
+    <Compile Include="Repositories\IServicioRepository.cs" />
+    <Compile Include="Repositories\ITipoComprobanteRepository.cs" />
+    <Compile Include="Repositories\ITipoLugarRepository.cs" />
+    <Compile Include="Repositories\ITipoPagoRepository.cs" />
+    <Compile Include="Repositories\ITipoTripulacionRespository.cs" />
+    <Compile Include="Repositories\ITipoViajeRepository.cs" />
+    <Compile Include="Repositories\ITransposteRepository.cs" />
+    <Compile Include="Repositories\ITripulacionRepository.cs" />
+    <Compile Include="Repositories\IVentasRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

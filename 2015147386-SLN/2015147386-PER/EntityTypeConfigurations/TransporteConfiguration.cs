@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _2015147386_PER.EntityTypeConfigurations
 {
-    class TransporteConfiguration
+    public class TransportConfiguration : EntityTypeConfiguration<TransportConfiguration>
     {
+        public TransportConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("Transports");
+            HasKey(a => a.TransporteId);
+
+
+            //Relation Configurations
+        }
     }
 }

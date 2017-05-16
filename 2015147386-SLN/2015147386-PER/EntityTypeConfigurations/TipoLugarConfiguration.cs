@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _2015147386_PER.EntityTypeConfigurations
 {
-    class TipoLugarConfiguration
+    public class TipoLugarConfiguration : EntityTypeConfiguration<TipoLugarConfiguration>
     {
+        public TipoLugarConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("TipoLugares");
+            HasKey(a => a.TipoLugarId);
+
+
+            //Relation Configurations
+        }
     }
 }

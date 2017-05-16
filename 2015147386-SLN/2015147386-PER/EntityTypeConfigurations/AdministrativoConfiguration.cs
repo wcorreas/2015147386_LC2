@@ -1,12 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _2015147386_PER.EntityTypeConfigurations
 {
-    class AdministrativoConfiguration
+    public class AdministrativoConfiguration : EntityTypeConfiguration<AdministrativoConfiguration>
+    {
+        public AdministrativoConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("Administrativos");
+            HasKey(a => a.AdministrativoId);
+
+
+            //Relation Configurations
+
+
+        }
+
+        private void HasKey(Func<object, object> p)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ToTable(string v)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class EntityTypeConfiguration<T>
     {
     }
 }
