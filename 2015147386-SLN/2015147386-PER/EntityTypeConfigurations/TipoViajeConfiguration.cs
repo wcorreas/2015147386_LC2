@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2015147386_PER.EntityTypeConfigurations
 {
-    class TipoViajeCOnfiguration
+    class TipoViajeConfiguration
     {
     }
 }

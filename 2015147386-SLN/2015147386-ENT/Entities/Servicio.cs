@@ -8,5 +8,6 @@ namespace _2015147386_ENT.Entities
 {
     class Servicio
     {
+        public string Tipo { get; set; }
     }
 }

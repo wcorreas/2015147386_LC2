@@ -8,5 +8,6 @@ namespace _2015147386_ENT.Entities
 {
     class TipoViaje
     {
+        public string Descripcion { get; set; }
     }
 }

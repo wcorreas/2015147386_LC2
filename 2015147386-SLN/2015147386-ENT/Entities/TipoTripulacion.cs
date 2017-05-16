@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2015147386_ENT.Entities
 {
-    class TipoTripulcion
+    class TipoTripulacion
     {
     }
 }

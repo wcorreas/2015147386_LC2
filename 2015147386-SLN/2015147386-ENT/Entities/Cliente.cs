@@ -8,5 +8,7 @@ namespace _2015147386_ENT.Entities
 {
     class Cliente
     {
+        public string Nombres { get; set; }
+        public string Apellidos { get; set; }
     }
 }
