@@ -8,5 +8,6 @@ namespace _2015147386_PER.Repositories
 {
     class ITipoComprobanteRepository
     {
+        //jajajajajajajajaj
     }
 }
