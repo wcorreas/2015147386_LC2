@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace _2015147386_PER.Repositories
 {
     class ITipoComprobanteRepository
-    {
-       
+    { 
     }
 }

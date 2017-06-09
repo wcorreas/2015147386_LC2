@@ -8,5 +8,7 @@ namespace _2015147386_ENT.Entities
 {
     class TipoTripulacion
     {
+        public int TipoTripulacionId { get; set; }
+        public string Descripcion { get; set; }
     }
 }
