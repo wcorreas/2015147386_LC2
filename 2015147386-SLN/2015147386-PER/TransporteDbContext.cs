@@ -37,7 +37,6 @@ namespace _2015147386_PER
             base.OnModelCreating(modelBuilder);
         }
 
-        
-
+        public System.Data.Entity.DbSet<_2015147386_ENT.Entities.Administrativo> Empleadoes { get; set; }
     }
 }

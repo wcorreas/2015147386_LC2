@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace _2015147386_PER.Migrations
 {
-    internal sealed class Configuration : DbMigrationsConfiguration<a12206149_PER.a12206149DbContext>
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<_2015147386_PER.TransporteDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(a12206149_PER.a12206149DbContext context)
+        protected override void Seed(_2015147386_PER.TransporteDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
