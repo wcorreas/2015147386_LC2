@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 
 namespace _2015147386_ENT.Entities
 {
-    class Bus
+    public class Bus
     {
-        public Tripulacion Tripulacion { get; set; }
-
-        public Bus()
-        {
-
-        }
-
-        public Bus(Tripulacion tripulacion)
-        {
-            Tripulacion = tripulacion;
-        }
-
+        public int BusId { get; set; }
         public string Placa { get; set; }
+
+
+
+
+
     }
 }
 

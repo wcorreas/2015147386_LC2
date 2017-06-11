@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace _2015147386_ENT.Entities
 {
-    public class Administrativo : Empleado
+    public enum TipoLugar
     {
-        //public int AdministrativoId { get; set; }
-        public string Classificaion { get; set; }
+        Lugar1,
+        Lugar2,
+        Lugar3
     }
 }

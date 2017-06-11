@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,25 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2015147386Context.cs" />
-    <Compile Include="EntityTypeConfigurations\AdministrativoConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\BusConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\ClienteConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\EmpleadoConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\EncomiendaConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\LugarViajeConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\ServicioConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoComprobanteConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoLugarConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoPagoConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoTripulacionConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TipoViajeConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TransporteConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\TripulacionConfiguration.cs" />
-    <Compile Include="EntityTypeConfigurations\VentasConfiguration.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Migrations\_ACT.cs" />
-    <Compile Include="Migrations\_InitialModel.cs" />
+    <Compile Include="EntitiesConfiguration\BusConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\ClienteConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\EmpleadoConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\LugarViajeConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\ServicioConfiguration.cs" />
+    <Compile Include="EntitiesConfiguration\VentasConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IAdministrativoRepository.cs" />
     <Compile Include="Repositories\IBusRepository.cs" />
@@ -75,7 +69,17 @@
     <Compile Include="Repositories\ITransposteRepository.cs" />
     <Compile Include="Repositories\ITripulacionRepository.cs" />
     <Compile Include="Repositories\IVentasRepository.cs" />
+    <Compile Include="TransporteDbContext.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\2015147386-ENT\2015147386-ENT.csproj">
+      <Project>{40afd331-7109-4e6b-9d5a-e0702a597495}</Project>
+      <Name>2015147386-ENT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

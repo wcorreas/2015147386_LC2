@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace _2015147386_ENT.Entities
 {
-    public class Administrativo : Empleado
+    public enum TipoPago
     {
-        //public int AdministrativoId { get; set; }
-        public string Classificaion { get; set; }
+        Contado,
+        Credito
     }
 }

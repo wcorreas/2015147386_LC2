@@ -48,5 +48,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\2015147386-ENT\2015147386-ENT.csproj">
+      <Project>{40afd331-7109-4e6b-9d5a-e0702a597495}</Project>
+      <Name>2015147386-ENT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\2015147386-PER\2015147386-PER.csproj">
+      <Project>{399baac6-b927-4ca8-85c9-aea5988878c0}</Project>
+      <Name>2015147386-PER</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

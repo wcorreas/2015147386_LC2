@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace _2015147386_ENT.Entities
 {
-    class Empleado
+    public abstract class Empleado
     {
         public int EmpleadoId { get; set; }
+
+
     }
 }
